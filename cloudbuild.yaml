@@ -1,3 +1,3 @@
 steps:
   - name: gcr.io/cloud-builders/gsutil
-    args: ["-m", "rsync", "-r", "-c", "-d", ".", "gs://my_proj_website"]
+    args: ["-m", "cp", "-r", ".", "gs://my_proj_website"]
